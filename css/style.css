@@ -1,0 +1,258 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #444444;
+  /* Podesavanja za header ---------------------------------------------------*/
+  /* Podesavanja za header ---------------------------------------------------*/
+  /* Podesavanja za navbar ---------------------------------------------------*/
+  /* Podesavanja za navbar ---------------------------------------------------*/
+  /* Podesavanja za sadrzaj stranice------------------------------------------*/
+  /* Podesavanja za sadrzaj stranice -----------------------------------------*/
+  /* Podesavanja za footer stranice ------------------------------------------*/
+}
+
+body header {
+  padding: 4% 0 1%;
+  background-color: #717171;
+}
+
+body header .slike {
+  border-radius: 9px;
+  box-shadow: 1.5px 2.5px 4.5px rgba(0, 0, 0, 0.5);
+}
+
+body header * {
+  box-sizing: border-box;
+}
+
+body header .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+body header .mySlides {
+  display: none;
+}
+
+body header .next, body header .prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+body header .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+body header .next:hover, body header .prev:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+body header .next:hover, body header .prev:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+body header .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+body header .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+body header .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+body header .active, body header .dot:hover {
+  background-color: #717171;
+}
+
+body header .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+}
+
+body nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #D4AF37;
+}
+
+body nav li {
+  float: left;
+}
+
+body nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+body nav li a:hover {
+  background-color: black;
+}
+
+body nav .active {
+  background-color: #111;
+}
+
+body nav #desno {
+  float: right;
+}
+
+body .stranica {
+  width: 80%;
+  margin: 0 auto;
+}
+
+body .stranica .container-kartice {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  margin: 5% 1% 1%;
+  padding: 0 3px;
+}
+
+body .stranica .container-kartice .kartica {
+  padding: 0;
+  border-radius: 3px;
+  margin: 3%;
+  text-align: justify;
+}
+
+body .stranica .container-kartice .kartica .kartica-naslov {
+  margin: 0 auto;
+  text-align: center;
+}
+
+body .stranica .container-kartice .kartica .kartica-naslov .slika {
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+}
+
+body .stranica .container-kartice .kartica .kartica-telo {
+  padding: 20px;
+  color: grey;
+  font-size: 120%;
+}
+
+body .stranica hr {
+  border-color: #D4AF37;
+}
+
+body .stranica .ponuda {
+  width: 100%;
+  margin: 5% 1%;
+  text-align: center;
+}
+
+body .stranica .ponuda h2 {
+  color: #D4AF37;
+  padding-bottom: 2%;
+}
+
+body .stranica .ponuda h5 {
+  padding-top: 2%;
+  color: #D4AF37;
+  margin: 0 auto;
+  width: 85%;
+  font-size: 14px;
+}
+
+body .stranica .ponuda .ponuda-container-kartice {
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+  margin: 5% 1% 1%;
+  padding: 0 3px;
+}
+
+body .stranica .ponuda .ponuda-container-kartice .kartica {
+  padding: 0;
+  border-radius: 3px;
+  margin: 3%;
+  text-align: justify;
+}
+
+body .stranica .ponuda .ponuda-container-kartice .kartica .kartica-naslov {
+  margin: 0 auto;
+  text-align: center;
+}
+
+body .stranica .ponuda .ponuda-container-kartice .kartica .kartica-naslov .slika {
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+}
+
+body .stranica .ponuda .ponuda-container-kartice .kartica .kartica-telo {
+  padding: 20px;
+  color: grey;
+  font-size: 120%;
+}
+
+body footer {
+  padding: 1em;
+  color: #D4AF37;
+  background-color: black;
+  clear: left;
+  text-align: center;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
